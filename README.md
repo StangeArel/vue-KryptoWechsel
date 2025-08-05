@@ -1,29 +1,49 @@
-# .
+# 💱 Vue KryptoWechsel
 
-This template should help get you started developing with Vue 3 in Vite.
+Ein einfaches und interaktives Vue 3-Projekt zum Umrechnen von Kryptowährungen – stilvoll umgesetzt mit **Vite**.
 
-## Recommended IDE Setup
+Diese App nutzt die [CryptoConvert API](https://github.com/coinconvert/crypto-convert), um den aktuellen Wechselkurs zwischen drei Währungen (BTC, ETH, USDT) zu berechnen.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Customize configuration
+## 📸 Vorschau
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+![Vorschau der App](./src/assets/vorschau.png) <!-- Ersetze ggf. den Pfad mit dem richtigen Bildpfad -->
 
-## Project Setup
+---
 
-```sh
+## ⚙️ Funktionen
+
+- 💸 Eingabe eines beliebigen Betrags
+- 🔄 Auswahl von zwei Kryptowährungen (BTC, ETH, USDT)
+- 📈 Umrechnung mit der CryptoConvert API
+- ⭐ Speicherung von häufig genutzten Währungspaaren als Favoriten
+- 🎨 Modernes, responsives Design mit leuchtenden Effekten
+
+---
+
+## 🧰 Tech Stack
+
+- [Vue 3](https://vuejs.org/)
+- [Vite](https://vitejs.dev/)
+- [CryptoConvert](https://github.com/coinconvert/crypto-convert)
+- JavaScript (ES6)
+- Scoped CSS
+
+---
+
+## 🧪 Komponenten-Übersicht
+
+- `Input.vue` – Zahl eingeben und Konvertierung starten
+- `Selector.vue` – Währung wählen mit aktivem Zustand
+- `Favourite.vue` – Favoriten anzeigen und übernehmen
+- `App.vue` – Hauptkomponente und Logik
+
+---
+
+## 🚀 Projekt Setup
+
+### 📦 Abhängigkeiten installieren
+
+```bash
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
