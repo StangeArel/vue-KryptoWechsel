@@ -1,9 +1,21 @@
 <template>
-  <input type="number" placeholder="Bitte eine Zahl eingeben …" />
+  <input
+    min="0"
+    type="number"
+    @input="changeAmount($event.target.value)"
+    placeholder="Bitte eine Zahl eingeben …"
+  />
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    changeAmount: {
+      type: Function,
+      required: true,
+    },
+  },
+}
 </script>
 
 <style scoped>
