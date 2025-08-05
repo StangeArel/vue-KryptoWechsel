@@ -5,7 +5,10 @@
         @input="changeAmount($event.target.value)"
         placeholder="Bitte eine Zahl eingeben …"
     /><br />
-    <button @click="convert()">Konvertieren</button>
+    <div class="btns">
+        <button @click="convert()">Konvertieren 🌀</button>
+        <button @click="favorite()">Zu Favoriten hinzufügen ⭐️</button>
+    </div>
 </template>
 
 <script>
@@ -16,6 +19,10 @@
                 required: true,
             },
             convert: {
+                type: Function,
+                required: true,
+            },
+            favorite: {
                 type: Function,
                 required: true,
             },
@@ -56,5 +63,12 @@
         background: linear-gradient(339deg, #6e0284, #d00a84, #d87b09);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         transform: scale(1.1);
+    }
+
+    .btns {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 50px;
     }
 </style>
